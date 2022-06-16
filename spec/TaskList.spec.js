@@ -19,7 +19,7 @@ describe("TaskList", () => {
     taskList.addTask(new Task(null, "no due date"))
 
     const dueYesterdayButComplete = new Task(todayPlusDays(-1), "due yesterday but complete")
-    dueYesterdayButComplete.status = "complete"
+    dueYesterdayButComplete.setStatusComplete()
     taskList.addTask(dueYesterdayButComplete)
 
     //These are overdue
