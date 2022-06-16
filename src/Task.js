@@ -13,29 +13,23 @@ class Task {
   }
 
   isNull() {
-    if(this.#dateDue === null) return true
-
-    return false
+    return this.#dateDue === null
   }
 
   getDateDue() {
-    const dateDue = this.#dateDue
-    return dateDue
+    return this.#dateDue
   }
 
   getDescription() {
-    const description = this.#description
-    return description
+    return this.#description
   }
 
   getStatus() {
-    if(this.#status === "incomplete") return true
-
-    return false
+    return this.#status === 'incomplete'
   }
 
   setStatusComplete() {
-    this.#status = "complete"
+    this.#status = 'complete'
   }
 }
 
